@@ -1,0 +1,156 @@
+body html{
+  width: 100%;
+  height: 100%;
+}
+#wrapper{
+  width: 600px;
+  height: 600px;
+  margin: 0px auto;
+}
+.item{
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item div{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 180px;
+  position: absolute;
+  left: -180px;
+  top: 0px;
+  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);/*兼容ie8及以下*/
+  background: #000000;
+  color: #fff;
+  transition: 0.5s;
+}
+.item .left-over{
+  left : 0px;
+  top: 0px;
+  animation: 500ms left-over 0ms 1 normal forwards;
+}
+.item .left-out{
+  left: -180px;
+  top: 0px;
+  animation: 500ms left-out 0ms 1 normal forwards;
+}
+.item .right-over{
+  left : 0px;
+  top: 0px;
+  animation: 500ms right-over 0ms 1 normal forwards; 
+}
+.item .right-out{
+  left: 180px;
+  top: 0px;
+  animation: 500ms right-out 0ms 1 normal forwards; 
+}
+.item .top-over{
+  left: 0px;
+  top: 0px;
+  animation: 500ms top-over 0ms 1 normal forwards; 
+}
+.item .top-out{
+  left : 0px;
+  top: -180px;
+  animation: 500ms top-out 0ms 1 normal forwards; 
+}
+.item .bottom-over{
+  left: 0px;
+  top: 0px;
+  animation: 500ms bottom-over 0ms 1 normal forwards; 
+}
+.item .bottom-out{
+  left : 0px;
+  top: 180px;
+  animation: 500ms bottom-out 0ms 1 normal forwards; 
+}
+@keyframes left-over{
+  from{
+    left:-180px;
+    top:0px;
+  }
+  to{
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes left-out{
+  from{
+    left:0px;
+    top:0px;
+  }
+  to{
+    left: -180px;
+    top: 0px;
+  }
+}
+@keyframes right-over{
+  from{
+    left:180px;
+    top:0px;
+  }
+  to{
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes right-out{
+  from{
+    left:0px;
+    top:0px;
+  }
+  to{
+    left: 180px;
+    top: 0px;
+  }
+}
+@keyframes top-over{
+  from{
+    left:0px;
+    top:-180px;
+  }
+  to{
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes top-out{
+  from{
+    left:0px;
+    top:0px;
+  }
+  to{
+    left: 0px;
+    top: -180px;
+  }
+}
+@keyframes bottom-over{
+  from{
+    left:0px;
+    top:180px;
+  }
+  to{
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes bottom-out{
+  from{
+    left:0px;
+    top:0px;
+  }
+  to{
+    left: 0px;
+    top: 180px;
+  }
+}
