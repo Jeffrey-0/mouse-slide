@@ -2,7 +2,7 @@
 
 原生js实现图片随鼠标滑动效果：mouse-slide
 
-演示demo地址：[鼠标滑动效果演示](https://jeffrey-0.github.io/mouse-slide/index.html)
+演示demo地址：[鼠标滑动效果演示](https://jeffrey-0.github.io/mouse-slide/)
 
 项目地址：[鼠标滑动效果](https://github.com/Jeffrey-0/mouse-slide)
 
